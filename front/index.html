@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ch" style="height: 100%; width: 100%; overflow: hidden">
+<head>
+    <meta charset="UTF-8">
+    <title>Event Graph</title>
+    <script type="text/javascript" src="js/echarts.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/dataTool.js"></script>
+</head>
+<body style="height: 100%; width: 100%">
+<div id="container" style="height: 100%; width: 100%"></div>
+</body>
+</html>
+
+<script type="text/javascript">
+
+    var dom = document.getElementById("container");
+    var myChart = echarts.init(dom);
+    var app = {};
+
+    option = null;
+    $.get("data/graph.xml", function (xml) {
+        var graph = echarts.dataTool.gexf.parse(xml);
+        var categories = [
+            {name:"trigger"},
+            {name:"attribute"},
+            // {name:"time"},
+            // {name:"position"},
+            // {name:"person"},
+            // {name:"organization"}
+        ];
+
+        var type_dict = {
+            "trigger": 0,
+            "attribute": 1,
+            // "time": 1,
+            // "position": 2,
+            // "person": 3,
+            // "organization": 4
+        };
+
+
+        graph.nodes.forEach(function (node) {
+            node.category = type_dict[node.type];
+        });
+
+
+        option = {
+            title: {
+                text: 'Event Graph',
+                subtext: 'Default layout',
+                top: 'bottom',
+                left: 'right'
+            },
+            tooltip: {},
+            legend: [{
+                data: categories.map(function (a) {
+                    return a.name;
+                })
+            }],
+
+
+            series : [
+                {
+                    name: 'Event Graph',
+                    type: 'graph',
+                    layout: 'force',
+                    draggable: true,
+                    // animationDuration: 1500,
+                    // animationEasingUpdate: 'quinticInOut',
+
+                    data: graph.nodes,
+                    links: graph.links,
+                    categories: categories,
+                    roam: true,
+                    // focusNodeAdjacency: true,
+                    itemStyle: {
+                        borderColor: '#fff',
+                        borderWidth: 1,
+                        shadowBlur: 10,
+                        shadowColor: 'rgba(0, 0, 0, 0.3)'
+                    },
+                    label: {
+                        show: true,
+                        position: 'right',
+                        formatter: '{b}'
+                    },
+                    lineStyle: {
+                        color: 'target',
+                        width:3,
+                    },
+                    // emphasis: {
+                    //     lineStyle: {
+                    //         width: 10
+                    //     }
+                    // }
+                }
+            ]
+        };
+
+        myChart.setOption(option);
+    }, 'xml');
+
+</script>

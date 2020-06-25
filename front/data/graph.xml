@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<gexf>
+		<graph>
+			<nodes>
+				<node id="e0" name="发生纵火案" type="trigger"/>
+				<node id="a0" name="time: 北京时间2017年6月22日凌晨5点左右" type="attribute"/>
+				<node id="a1" name="position: 浙江杭州" type="attribute"/>
+				<node id="a2" name="position: 北京" type="attribute"/>
+				<node id="e1" name="造成4人死亡" type="trigger"/>
+				<node id="e2" name="批准逮捕决定" type="trigger"/>
+				<node id="a3" name="organization-A0: 杭州市检察院" type="attribute"/>
+				<node id="e3" name="涉嫌放火罪盗窃罪" type="trigger"/>
+				<node id="e4" name="执行逮捕" type="trigger"/>
+				<node id="a4" name="organization-A0: 杭州市公安局" type="attribute"/>
+				<node id="a5" name="time: 2017年7月1日" type="attribute"/>
+				<node id="a6" name="organization: 杭州市检察院" type="attribute"/>
+				<node id="e5" name="提起公诉" type="trigger"/>
+				<node id="a7" name="organization-A0: 杭州市检察院" type="attribute"/>
+				<node id="a8" name="person-A1: 莫焕晶" type="attribute"/>
+				<node id="a9" name="time: 2017年8月21日" type="attribute"/>
+				<node id="e6" name="杭州放火案开庭" type="trigger"/>
+				<node id="a10" name="time: 2017年12月21日上午9时许" type="attribute"/>
+				<node id="a11" name="position: 杭州" type="attribute"/>
+				<node id="a12" name="organization: 浙江省人民法院" type="attribute"/>
+				<node id="e7" name="宣布审理" type="trigger"/>
+				<node id="e8" name="收到提出政府信息公开申请" type="trigger"/>
+				<node id="a13" name="person-A1: 林" type="attribute"/>
+				<node id="a14" name="time: 2017年12月25日" type="attribute"/>
+				<node id="a15" name="position: 杭州市" type="attribute"/>
+				<node id="a16" name="organization: 中华人民共和国政府" type="attribute"/>
+				<node id="e9" name="做出答复" type="trigger"/>
+				<node id="e10" name="案件一审宣判" type="trigger"/>
+				<node id="a17" name="person-A1: 莫焕晶" type="attribute"/>
+				<node id="a18" name="time: 2018年2月9日" type="attribute"/>
+				<node id="e11" name="判死刑" type="trigger"/>
+				<node id="e12" name="提起上诉" type="trigger"/>
+				<node id="a19" name="person-A1: 莫焕晶" type="attribute"/>
+				<node id="a20" name="person-A0: 莫焕晶" type="attribute"/>
+				<node id="e13" name="莫焕晶上诉" type="trigger"/>
+				<node id="a21" name="person-A0: 莫焕晶" type="attribute"/>
+				<node id="a22" name="time: 5月17日9时" type="attribute"/>
+				<node id="e14" name="庭审结束" type="trigger"/>
+				<node id="a23" name="time: 下午17时20分许" type="attribute"/>
+				<node id="e15" name="宣布宣判" type="trigger"/>
+				<node id="e16" name="作出二审裁定" type="trigger"/>
+				<node id="a24" name="time: 6月4日" type="attribute"/>
+				<node id="e17" name="驳回上诉" type="trigger"/>
+				<node id="e18" name="执行死刑" type="trigger"/>
+				<node id="a25" name="person-A1: 莫焕晶" type="attribute"/>
+				<node id="a26" name="time: 2018年9月21日" type="attribute"/>
+				<node id="a27" name="organization: 最高法院" type="attribute"/>
+			</nodes>
+			<links>
+				<edge source="e0" target="a0"/>
+				<edge source="e0" target="a1"/>
+				<edge source="e0" target="a2"/>
+				<edge source="e0" target="e1"/>
+				<edge source="e2" target="a3"/>
+				<edge source="e2" target="e3"/>
+				<edge source="e4" target="a4"/>
+				<edge source="e4" target="a5"/>
+				<edge source="e4" target="a6"/>
+				<edge source="e4" target="e5"/>
+				<edge source="e3" target="e4"/>
+				<edge source="e5" target="a7"/>
+				<edge source="e5" target="a8"/>
+				<edge source="e5" target="a9"/>
+				<edge source="e5" target="e6"/>
+				<edge source="e6" target="a10"/>
+				<edge source="e6" target="a11"/>
+				<edge source="e6" target="a12"/>
+				<edge source="e6" target="e7"/>
+				<edge source="e8" target="a13"/>
+				<edge source="e8" target="a14"/>
+				<edge source="e8" target="a15"/>
+				<edge source="e8" target="a16"/>
+				<edge source="e8" target="e8"/>
+				<edge source="e8" target="e9"/>
+				<edge source="e8" target="e10"/>
+				<edge source="e10" target="a17"/>
+				<edge source="e10" target="a18"/>
+				<edge source="e10" target="e11"/>
+				<edge source="e10" target="e12"/>
+				<edge source="e11" target="a19"/>
+				<edge source="e12" target="a20"/>
+				<edge source="e12" target="e13"/>
+				<edge source="e13" target="a21"/>
+				<edge source="e13" target="a22"/>
+				<edge source="e13" target="e14"/>
+				<edge source="e14" target="a23"/>
+				<edge source="e14" target="e15"/>
+				<edge source="e14" target="e16"/>
+				<edge source="e16" target="a24"/>
+				<edge source="e16" target="e17"/>
+				<edge source="e16" target="e18"/>
+				<edge source="e18" target="a25"/>
+				<edge source="e18" target="a26"/>
+				<edge source="e18" target="a27"/>
+				<edge source="e1" target="e4"/>
+				<edge source="e7" target="e8"/>
+			</links>
+		</graph>
+	</gexf>

@@ -1,0 +1,127 @@
+{
+  "event_element": [
+    {
+      "event_sentence": "2014年5月16日上午10时许，枞阳县金社乡金渡村发生一起爆炸致人死伤案，造成2人死亡，3人受伤。",
+      "event_graph": [
+        {
+          "child_event_id": "e01",
+          "time": "2014年5月16日上午10时",
+          "time_align": "2014-05-16-10-XX",
+          "trigger_agent": "",
+          "agent_attri": "",
+          "trigger": "发生",
+          "trigger_object": "死伤案",
+          "object_attri": "一起爆炸致人死伤",
+          "location": "枞阳县金社乡金渡村",
+          "organization": "",
+          "person": ""
+        },
+        {
+          "child_event_id": "e02",
+          "time": "2014年5月16日上午10时",
+          "time_align": "2014-05-16-10-XX",
+          "trigger_agent": "",
+          "agent_attri": "",
+          "trigger": "造成",
+          "trigger_object": "死亡",
+          "object_attri": "2人",
+          "location": "枞阳县金社乡金渡村",
+          "organization": "",
+          "person": ""
+        },
+        {
+          "child_event_id": "e03",
+          "time": "2014年5月16日上午10时",
+          "time_align": "2014-05-16-10-XX",
+          "trigger_agent": "",
+          "agent_attri": "",
+          "trigger": "造成",
+          "trigger_object": "受伤",
+          "object_attri": "3人",
+          "location": "枞阳县金社乡金渡村",
+          "organization": "",
+          "person": ""
+        }
+      ]
+    },
+    {
+      "event_sentence": "安徽省委省政府高度重视，派出公安、民政等相关部门负责人第一时间赶赴现场调查。",
+      "event_graph": [
+        {
+          "child_event_id": "e04",
+          "time": "",
+          "time_align": "",
+          "trigger_agent": "政府",
+          "agent_attri": "",
+          "trigger": "重视",
+          "trigger_object": "",
+          "object_attri": "",
+          "location": "安徽省",
+          "organization": "安徽省委省政府",
+          "person": ""
+        },
+        {
+          "child_event_id": "e05",
+          "time": "",
+          "time_align": "",
+          "trigger_agent": "政府",
+          "agent_attri": "",
+          "trigger": "派出",
+          "trigger_object": "负责人",
+          "object_attri": "公安/民政等相关部门",
+          "location": "安徽省",
+          "organization": "安徽省委省政府",
+          "person": ""
+        },
+        {
+          "child_event_id": "e06",
+          "time": "",
+          "time_align": "",
+          "trigger_agent": "负责人",
+          "agent_attri": "相关部门",
+          "trigger": "赶赴",
+          "trigger_object": "现场",
+          "object_attri": "",
+          "location": "安徽省",
+          "organization": "",
+          "person": ""
+        },
+        {
+          "child_event_id": "e07",
+          "time": "",
+          "time_align": "",
+          "trigger_agent": "负责人",
+          "agent_attri": "相关部门",
+          "trigger": "调查",
+          "trigger_object": "",
+          "object_attri": "",
+          "location": "枞阳县金社乡金渡村",
+          "organization": "",
+          "person": ""
+        }
+      ]
+    }
+  ],
+  "event_relation": {
+    "e01": {
+      "e02": "因果关系",
+      "e03": "因果关系"
+    },
+    "e02": {
+      "e03": "并列关系",
+      "e04": "顺承关系"
+    },
+    "e03": {
+      "e04": "顺承关系"
+    },
+    "e04": {
+      "e05": "顺承关系"
+    },
+    "e05": {
+      "e06": "顺承关系"
+    },
+    "e06": {
+      "e07": "顺承关系"
+    }
+  }
+}
