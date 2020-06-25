@@ -1,8 +1,8 @@
 # KGEventPred
 
 本项目主要包含两个大任务，分别是：
-* [Event Evolution Knowledge Graph Generation](#Event Evolution Knowledge Graph Generation)
-* [Event prediction](#Event prediction)
+* Event Evolution Knowledge Graph Generation
+* Event prediction
 
 
 
