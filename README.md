@@ -1,8 +1,69 @@
 # KGEventPred
+[Chinese Version](#基于事理图谱的事件预测（KGEventPred）)
+
+
+This project mainly includes two major tasks:
+* [Event Evolution Knowledge Graph Generation](#Event Evolution Knowledge Graph Generation)
+* [Event prediction](#Event prediction)
+
+
+
+## Event Evolution Knowledge Graph Generation
+
+### Description
+
+This task first analyzes the news data, extracts the event chain and event elements from it, and finally generates an event graph.
+
+
+![image](pictures/example.png)
+
+### Files
+
+* `/corpus`：stores raw data
+* `/front`：stores front-end related code
+    * more details in [front-end readme.md](front/readme.md)
+* `/utils`：stores generation event tools. There are detailed comments in this part of the file, you can directly open the file to view the function description.
+    * ltp analyzer 
+    * ltp formatter 
+    * graph manager 
+    * tools 
+
+### Precautions
+
+There are still some imperfections in the event analysis part, and TODO is used to mark the part that can be improved.
+
+## Event prediction
+
+### Description
+
+1. Generate experimental data:
+     * In `/corpus` is the generated experimental data
+     * `/scripts/make_dataset.ipynb` is the script to generate experimental data
+2. Model
+     * `/models` contains model documents
+     * There are 7 models in total
+     * Model training can use `/train.py`
+     * `/start.sh` is to use the server to run the model training script
+3. Visualization of results
+     * `/scripts/draw.py` is a script for visualizing model training results, `/scripts/getscore.py` is a script for obtaining model score data, which is used to assist drawing
+
+### Precautions
+
+1. Create a log folder in the running directory
+2. When testing the model (in the model code file) in a single file, you need to comment out the register line
+
+## Others
+
+1. Many files are not uploaded on github, you can find me to copy them directly, please refer to `/.gitignore`
+2. The required packages are in `/requirements.txt`
+3. `/my_logger.py` is the logger script, and the log is stored in `/log`
+
+# 基于事理图谱的事件预测（KGEventPred）
+
 
 本项目主要包含两个大任务，分别是：
-* Event Evolution Knowledge Graph Generation
-* Event prediction
+* [Event Evolution Knowledge Graph Generation](#Event Evolution Knowledge Graph Generation)
+* [Event prediction](#Event prediction)
 
 
 
@@ -21,7 +82,7 @@
 * `/corpus`：主要存储了原始数据
 * `/front`：主要存储了前端相关代码
     * 前端相关可在[readme.md](front/readme.md)中查看
-* `/utils`：主要存储了生成事件
+* `/utils`：主要存储了生成事件工具
     * 该部分文件中都有详细的注释，可直接打开文件查看功能描述
     * ltp analyzer 是ltp分析工具
     * ltp formatter 是将ltp分析的结果格式化
