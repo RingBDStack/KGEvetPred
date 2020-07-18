@@ -1,10 +1,9 @@
 # KGEventPred
-[Chinese Version](#基于事理图谱的事件预测（KGEventPred）)
 
 
 This project mainly includes two major tasks:
-* [Event Evolution Knowledge Graph Generation](#Event Evolution Knowledge Graph Generation)
-* [Event prediction](#Event prediction)
+* Event Evolution Knowledge Graph Generation
+* Event prediction
 
 
 
@@ -62,16 +61,16 @@ There are still some imperfections in the event analysis part, and TODO is used 
 
 
 本项目主要包含两个大任务，分别是：
-* Event Evolution Knowledge Graph Generation
-* Event prediction
+* 事理图谱抽取
+* 事件预测
 
 
 
-## Event Evolution Knowledge Graph Generation
+## 事理图谱抽取
 
 ### 主要任务描述
 
-分析新闻数据，抽取事件链和事件要素，最终生成事件图谱。
+分析新闻数据，抽取事件链和事件要素，最终生成事理图谱。
 
 
 ![image](pictures/example.png)
@@ -93,7 +92,7 @@ There are still some imperfections in the event analysis part, and TODO is used 
 
 事件分析部分还有一些不完善的地方，用TODO标注了能够提升的部分。
 
-## Event prediction
+## 事件预测
 
 ### 主要任务/文件描述
 
