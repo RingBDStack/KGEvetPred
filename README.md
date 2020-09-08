@@ -1,4 +1,4 @@
-# KGEventPred
+# KGEvetPred
 
 
 This project mainly includes two major tasks:
@@ -57,7 +57,7 @@ There are still some imperfections in the event analysis part, and TODO is used 
 2. The required packages are in `/requirements.txt`
 3. `/my_logger.py` is the logger script, and the log is stored in `/log`
 
-# 基于事理图谱的事件预测（KGEventPred）
+# 基于事理图谱的事件预测（KGEvetPred）
 
 
 本项目主要包含两个大任务，分别是：
